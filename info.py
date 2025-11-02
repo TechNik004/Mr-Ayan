@@ -55,8 +55,8 @@ MULTI_FSUB = [int(channel_id) for channel_id in environ.get('MULTI_FSUB', '0').s
 # ============================
 # Payment Configuration
 # ============================
-QR_CODE = environ.get('QR_CODE', 'https://envs.sh/t2i.jpg')
-OWNER_UPI_ID = environ.get('OWNER_UPI_ID', 'nikhiltrex@fam')
+QR_CODE = environ.get('QR_CODE', 'https://')
+OWNER_UPI_ID = environ.get('OWNER_UPI_ID', 'mohd1111111111@fam')
 
 #Auto approve 
 CHAT_ID = [int(app_chat_id) if id_pattern.search(app_chat_id) else app_chat_id for app_chat_id in environ.get('CHAT_ID', '').split()]
@@ -82,18 +82,18 @@ CAPTION_LANGUAGES = ["Bhojpuri", "Hindi", "Bengali", "Tamil", "English", "Bangla
 # ============================
 # Verification Settings
 # ============================
-VERIFY = bool(environ.get('VERIFY', False))  # Verification On (True) / Off (False)
+VERIFY = bool(environ.get('VERIFY', True))  # Verification On (True) / Off (False)
 VERIFY_EXPIRE = int(environ.get('VERIFY_EXPIRE', 12))  # Add time in hours
 VERIFIED_LOG = int(environ.get('VERIFIED_LOG', '-1003158679239'))  # Log channel id (make sure bot is admin)
-HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', '')  # How to open tutorial link for verification
+HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', 'https://t.me/PublicCinima')  # How to open tutorial link for verification
 
 # ============================
 # Link Shortener Configuration
 # ============================
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'linkshortify.com')
-SHORTLINK_API = environ.get('SHORTLINK_API', '53229e400eba26696058cd2640bd120261864a01')
-TUTORIAL = environ.get('TUTORIAL', 'https://t.me/how_to_verifylink')  # Tutorial video link for opening shortlink website
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'just2earn.com')
+SHORTLINK_API = environ.get('SHORTLINK_API', 'b78916da8a501496bb4ae78d45d547859b2e4561')
+TUTORIAL = environ.get('TUTORIAL', 'https://t.me/PublicCinima')  # Tutorial video link for opening shortlink website
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', False))
 
 # ============================
